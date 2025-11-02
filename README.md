@@ -51,7 +51,7 @@ EventBus.publish(&"player_damaged", 10)
 ### 🚫 Unsubscribing
 
 ```gdscript
-EventBus.unsubscribe(&"player_damaged", Callable(self, "_on_player_damaged"))
+EventBus.unsubscribe(&"player_damaged", _on_player_damaged)
 ```
 
 ---
