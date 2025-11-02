@@ -69,7 +69,7 @@ func take_damage(amount: int) -> void:
 
 ```gdscript
 func _ready() -> void:
-	EventBus.subscribe(&"player_damaged", Callable(self, "_on_player_damaged"))
+	EventBus.subscribe(&"player_damaged", _on_player_damaged)
 
 func _on_player_damaged(amount: int) -> void:
 	health -= amount
@@ -112,18 +112,8 @@ If true, logs all SUB / PUB actions in the output console.
 
 ---
 
-## 🧑‍💻 Contributing
-
-Pull requests and feedback are welcome!
-If you find a bug or want a feature added (like event priorities or once-only listeners), open an issue or PR.
-
----
-
 ## ⚖️ License
 
 MIT License — free for commercial and personal use.
-Attribution appreciated but not required. ❤️
 
 ---
-
-Would you like me to include a **short “How It Works” diagram** (ASCII or image-ready Markdown) that shows how events flow from publisher → EventBus → subscribers? It’s great for GitHub landing pages.
