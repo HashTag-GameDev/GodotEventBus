@@ -31,7 +31,7 @@ It’s built for modular, decoupled game architecture — perfect for UI, gamepl
 
 ```gdscript
 # Subscribe to a named event
-EventBus.subscribe(&"player_damaged", Callable(self, "_on_player_damaged"))
+EventBus.subscribe(&"player_damaged", "_on_player_damaged)
 
 func _on_player_damaged(amount: int) -> void:
 	print("Player took", amount, "damage")
