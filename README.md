@@ -1,7 +1,3 @@
-Here’s a professional, clear, and developer-friendly **README.md** for your **Godot EventBus** GitHub repository — written to attract both beginners and advanced users who want to understand *why* and *how* to use it.
-
----
-
 # 🚏 Godot EventBus
 
 A lightweight, plug-and-play **Event Bus** system for **Godot 4.x** that lets your nodes communicate **without hard references or tangled signal connections**.
