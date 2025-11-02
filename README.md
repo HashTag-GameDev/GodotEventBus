@@ -1,0 +1,17 @@
+## [b]Description[/b][br]
+## Subscribes a listener to an event so it will be notified every time that event is published.  
+## Use this to connect systems to a named event without hard node references.[br]
+##[br]
+## [b]Parameters[/b][br]
+## • [code]event[/code]: The event/channel name to listen to (e.g. [code]&"player_damaged"[/code]).[br]
+## • [code]method[/code]: The [code]Callable[/code] to invoke when the event is published.[br]
+##[br]
+## [b]Notes[/b][br]
+## • Multiple listeners can subscribe to the same event; all will be called when the event fires.[br]
+## • Events will be sent to listeners in order of subscription.[br]
+## • If `_debug_enabled` is true, a SUB line is printed identifying the event and listener.[br]
+##[br]
+## [b]Example[/b]
+## [codeblock]
+## EventBus.subscribe(&"player_damaged", "_on_player_damaged"))
+## [/codeblock]
